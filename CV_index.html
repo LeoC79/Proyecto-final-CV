@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="C:\Users\Naty_\OneDrive\Documentos\Front End\css\estilos.css">
+    <script src="C:\Users\Naty_\OneDrive\Documentos\Front End\js\js-cv-cruz.js"></script>
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header> 
+        <h1>
+            Complete su Curriculum Vitae
+        </h1> 
+    </header>
+    
+    <div id= "fotoynombre"> 
+                
+        <div class="subimg">
+            
+            <div class="icono">
+                <img id="fotito" src="C:\Users\Naty_\OneDrive\Documentos\Front End\imagenes\camera-solid.svg" alt="cargar imagen de perfil">
+                   
+	                <form action="#"
+                     method="POST"
+                     enctype="multipart/form-data">
+
+    		
+    		
+			         <input type="file" id="subir" name="subir"
+                      accept="image/gift, image/jpeg" onchange="previewImage(event, '#imgPreview')">
+                      
+                    </form>
+                    
+            
+                    <div class="prev">
+                    
+                     </div>
+            </div>
+        </div>
+        
+        <img id="imgPreview" src="C:\Users\Naty_\OneDrive\Documentos\Front End\imagenes\user-solid.svg">
+        <p id="pres1">Presione aquí para subir</p>
+        <p id="pres2">su foto de perfil.</p> 
+        
+        <h2 id="nombre" onclick="mostrarnombre(this.value)" >Ingrese su nombre y apellido</h2>
+        <input name="nombretxt" oninput="colocarnombre(this.value)" id="nombretxt" cols="30" style="display: none;" >
+
+        <p id="descripcion" onclick="mostrar(this.value)" >Brebe descripción referencial, ej: estudios, antigüedad y antecedente</p>
+        <textarea name="prueba" oninput="myFunction(this.value)" id="prueba" cols="30" rows="5" style="display: none;" ></textarea>
+        
+        <div class="contacto" id="contacto">
+            <h2 class="linea"><span>Contacto</span></h2>
+                <center>
+                    <div class="container-fluid">
+                        <div class="row align-items-start">
+                            <div class="col-4">
+                                <img id="telcont" src="C:\Users\Naty_\OneDrive\Documentos\Front End\imagenes\mobile-solid.svg" alt="Telefono" >
+                                <input name="telc" id="telc" type="tel" oninput="colocatelcont(this.value)" required>
+                                <h4 id="tel-cont" onclick="muestratelcont(this.value)" style="display: none;"></h4>
+                            </div>
+                            <div class="col-4">    
+                                <img id="mailcont" src="C:\Users\Naty_\OneDrive\Documentos\Front End\imagenes\envelope-solid.svg" alt="Email">
+                                <input id="mail" type="email" oninput="colocaemail(this.value)" required>
+                                <h4 id="mail-cont" onclick="muestraemail(this.value)" style="display: none;"></h4>
+                            </div>
+                            <div class="col-4">    
+                                <img id="dircont" src="C:\Users\Naty_\OneDrive\Documentos\Front End\imagenes\location-dot-solid.svg" alt="Dirección">
+                                <input id="dir" oninput="colocadir(this.value)" type="text">
+                                <h4 id="dir-cont" onclick="muestradir(this.value)" style="display: none;"></h4>
+                            </div>
+                        </div>
+                    </div>        
+                </center>
+            
+
+        </div>
+    </div>
+
+    <div id="contenedor" class="container-fluid">
+        <div id="fila" class="row align-items-start">
+          <div class="col-4">
+            <div id= "descripcion">
+                <h2>Estudios Cursados</h2>
+                
+                 
+                     <input type="checkbox" id="desc1" onclick="mostrar1(this.value)">
+                     <p id="tex1">Click en el check para ingresar estudio</p>
+                     <input type="text" oninput="colocardes(this.value)" id="des-ing-1" style="display: none;"><br>
+     
+                     <input type="checkbox" id="desc2" style="display: none" onclick="mostrar2(this.value)">
+                     <p id="tex2" style="display: none;">Click en el check para ingresar estudio</p>
+                     <input type="text" oninput="colocardes2(this.value)" id="des-ing-2" style="display: none;"><br>
+                     
+                     <input type="checkbox" id="desc3" style="display: none" onclick="mostrar3(this.value)">
+                     <p id="tex3" style="display: none;">Click en el check para ingresar estudio</p>
+                     <input type="text" oninput="colocardes3(this.value)" id="des-ing-3" style="display: none;"><br>
+                     
+                     <input type="checkbox" id="desc4" style="display: none" onclick="mostrar4(this.value)">
+                     <p id="tex4" style="display: none;">Click en el check para ingresar estudio</p>
+                     <input type="text" oninput="colocardes4(this.value)" id="des-ing-4" style="display: none;"><br>
+                     
+                     <input type="checkbox" id="desc5" style="display: none" onclick="mostrar5(this.value)">
+                     <p id="tex5" style="display: none;">Click en el check para ingresar estudio</p>
+                     <input type="text" oninput="colocardes5(this.value)" id="des-ing-5" style="display: none;"><br>
+     
+                 
+               
+               
+             </div>
+          </div>
+          <div class="col-4">
+            <div id= "experiencia">
+                <h2>Experiencia Laboral</h2>
+                <input type="checkbox" id="exp1" onclick="mostrare1(this.value)">
+                <p id="etex1">Click en el check para ingresar antecedente</p>
+                <input type="text" oninput="colocare(this.value)" id="edes-ing-1" style="display: none;"><br>
+      
+                <input type="checkbox" id="exp2" style="display: none" onclick="mostrare2(this.value)">
+                <p id="etex2" style="display: none;">Click en el check para ingresar antecedente</p>
+                <input type="text" oninput="colocare2(this.value)" id="edes-ing-2" style="display: none;"><br>
+                
+                <input type="checkbox" id="exp3" style="display: none" onclick="mostrare3(this.value)">
+                <p id="etex3" style="display: none;">Click en el check para ingresar antecedente</p>
+                <input type="text" oninput="colocare3(this.value)" id="edes-ing-3" style="display: none;"><br>
+                
+                <input type="checkbox" id="exp4" style="display: none" onclick="mostrare4(this.value)">
+                <p id="etex4" style="display: none;">Click en el check para ingresar antecedente</p>
+                <input type="text" oninput="colocare4(this.value)" id="edes-ing-4" style="display: none;"><br>
+                
+                <input type="checkbox" id="exp5" style="display: none" onclick="mostrare5(this.value)">
+                <p id="etex5" style="display: none;">Click en el check para ingresar antecedente</p>
+                <input type="text" oninput="colocare5(this.value)" id="edes-ing-5" style="display: none;"><br>
+      
+      
+              </div>
+          </div>
+          <div class="col-4">
+            <div id= "referencia">
+                <h2>Referencias personales</h2>
+                <input type="checkbox" id="ref1" onclick="mostrarref(this.value)">
+                <p id="rtex">Click en el check para ingresar antecedente</p>
+                <input type="text" oninput="colocarr(this.value)" id="rdes-ing-1" style="display: none;"><br>
+      
+                <input type="checkbox" id="ref2" style="display: none" onclick="mostrarr2(this.value)">
+                <p id="rtex2" style="display: none;">Click en el check para ingresar antecedente</p>
+                <input type="text" oninput="colocarr2(this.value)" id="rdes-ing-2" style="display: none;"><br>
+                
+                <input type="checkbox" id="ref3" style="display: none" onclick="mostrarr3(this.value)">
+                <p id="rtex3" style="display: none;">Click en el check para ingresar antecedente</p>
+                <input type="text" oninput="colocarr3(this.value)" id="rdes-ing-3" style="display: none;"><br>
+                
+                <input type="checkbox" id="ref4" style="display: none" onclick="mostrarr4(this.value)">
+                <p id="rtex4" style="display: none;">Click en el check para ingresar antecedente</p>
+                <input type="text" oninput="colocarr4(this.value)" id="rdes-ing-4" style="display: none;"><br>
+                
+                <input type="checkbox" id="ref5" style="display: none" onclick="mostrarr5(this.value)">
+                <p id="rtex5" style="display: none;">Click en el check para ingresar antecedente</p>
+                <input type="text" oninput="colocarr5(this.value)" id="rdes-ing-5" style="display: none;"><br>    
+      
+              </div>
+          </div>
+        </div>
+          
+    
+        
+    
+        
+  </div>
+</div>
+    
+
+    
+
+    
+
+    <div id="boton">
+        <center>
+            <button type="button" id="enviar">Enviar formulario</button>
+        </center>
+        
+    </div>
+
+</body>
+
+</html>

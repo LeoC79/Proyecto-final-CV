@@ -1,0 +1,297 @@
+header{
+display: flex;
+  justify-content: center;
+}
+h1{
+    font-family: Arial; font-style: oblique;   
+    color: blue;
+    position: relative;;
+    
+}
+div#fotoynombre {
+    background-color: aquamarine;
+    margin: auto;
+    border: solid 1px;
+    overflow: hidden;
+    vertical-align: top;
+    width: 99.99%;
+    height: 300px;
+    position: relative;
+}
+
+.subimg {
+    height: 50px;
+    width: 50px;
+    border: solid 1px #CCC;
+    position: relative;
+    overflow: hidden;
+}
+.subimg .icono {
+width: 50px;
+overflow: hidden;
+}
+
+.subimg .icono:hover {
+background-color: aliceblue;
+}
+
+img#imgPreview{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border: none;
+    top: 50px;
+    left: 0px;
+    position: absolute;
+}
+img#fotito{
+    width: 48px;
+    height: 50px;
+    cursor: pointer;
+    position:absolute;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.subimg .icono .prev {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position:absolute;
+    top:8px;
+    left: 8px;
+
+}
+
+.subimg .icono #subir {
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+h2#nombre{
+    position: absolute;
+    top: 50px;
+    margin-left: 150px;
+    color: black;
+    font-family: 'Comic Neue', cursive;
+}
+
+p#pres1{
+position:absolute;
+margin-top: -40px;
+margin-left: 55px;
+font-family: Arial;
+font-size: x-small;
+}
+p#pres2{
+    position:absolute;
+    margin-top: -22px;
+    margin-left: 55px;
+    font-family: Arial;
+font-size: x-small;
+    }
+
+input#nombretxt{
+    position: absolute;
+    top: 50px;
+    margin-left: 150px;
+    color: black;
+    font-family: 'Comic Neue', cursive;
+}
+p#descripcion{
+    position: absolute;
+    top: 100px;
+    margin-left: 150px;
+    font-family: 'Comic Neue', cursive;
+}
+textarea#prueba{
+    position: absolute;
+    top: 100px;
+    margin-left: 150px;
+}
+h2{
+    color: black;
+    font-family: 'Comic Neue', cursive;
+    text-align: center;
+}
+
+h2.linea {
+    position: relative;
+    z-index: 1;
+}
+h2.linea:before {
+    border-top: 2px solid #0f0e03fa;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 95%;
+    z-index: -1;
+}
+h2.linea span {
+  
+    background:aquamarine;
+    padding: 0 15px;
+}
+
+p{
+    color: rgb(5, 12, 12);
+    margin-left: 100px;
+}
+
+div#descripcion{
+    width: auto;
+    height: 300px;
+    background-color:cadetblue;
+}
+div#experiencia{
+    width: auto;
+    height: 300px;
+    background-color:cornflowerblue;
+}
+div#referencia{
+    width: auto;
+    height: 300px;
+    background-color:cadetblue;
+    
+}
+div#fila{
+    --bs-gutter-x:0;
+}
+div#contenedor{
+    --bs-gutter-x:0;
+}
+
+p#tex1 {
+    font-family: 'Comic Neue', cursive;;
+    margin-left: 0px;
+    display: inline;
+    
+}
+
+p#tex2 {
+    font-family: 'Comic Neue', cursive;
+    margin-left: 0px;
+    display: inline;
+    
+}
+
+p#tex3 {
+    font-family: 'Comic Neue', cursive;
+    margin-left: 0px;
+    display: inline;
+    
+}
+p#tex4 {
+    font-family: 'Comic Neue', cursive;
+    margin-left: 0px;
+    display: inline;
+    
+}
+
+p#tex5 {
+    font-family: 'Comic Neue', cursive;
+    margin-left: 0px;
+    display: inline;
+    
+}
+input#des-ing-1, input#des-ing-2, input#des-ing-3, input#des-ing-4, input#des-ing-5 {
+    width: 85px;
+}
+input#edes-ing-1, input#edes-ing-2, input#edes-ing-3, input#edes-ing-4, input#edes-ing-5 {
+    width: 85px;
+}
+
+div#contacto{
+    display: block;
+    margin-top: 125px;
+    font-family: 'Comic Neue', 'cursive';
+}
+img#telcont{
+    
+    width: 25px;
+    height: 25px;
+}
+img#dircont{
+    width: 25px;
+}
+img#mailcont{
+    width: 25px;
+}
+p#etex1 {
+    font-family: 'Comic Neue', cursive;
+    margin-left: 0px;
+    display: inline;
+    }
+p#etex2 {
+    font-family: 'Comic Neue', cursive;
+    margin-left: 0px;
+    display: inline;
+    }
+p#etex3 {
+    font-family: 'Comic Neue', cursive;
+    margin-left: 0px;
+    display: inline;
+    }
+p#etex4 {
+    font-family: 'Comic Neue', cursive;
+    margin-left: 0px;
+    display: inline;
+    }
+p#etex5 {
+    font-family: 'Comic Neue', cursive;
+    margin-left: 0px;
+    display: inline;
+    }
+p#rtex {
+    font-family: 'Comic Neue', cursive;
+    margin-left: 0px;
+    display: inline;
+    }
+p#rtex2 {
+    font-family: 'Comic Neue', cursive;
+    margin-left: 0px;
+    display: inline;
+    }
+p#rtex3 {
+    font-family: 'Comic Neue', cursive;
+    margin-left: 0px;
+    display: inline;
+    }
+p#rtex4 {
+    font-family: 'Comic Neue', cursive;
+    margin-left: 0px;
+    display: inline;
+    }
+p#rtex5 {
+    font-family: 'Comic Neue', cursive;
+    margin-left: 0px;
+    display: inline;
+    }
+
+div#boton{
+    display: block;
+    background-color: aquamarine;
+}
+
+button#enviar{
+    color: black;
+    font-family: 'Comic Neue', 'cursive';
+    border: solid ;
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 50px;
+    width: 100px;
+    }
+input#telc ,input#mail ,input#dir {
+    width: 100px;
+}
